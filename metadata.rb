@@ -6,9 +6,9 @@ description      'Enables/Disable/Upgrades rightlink10'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-recipe 'rightlink10:enable', "Enables the RightLink 10 agent"
-recipe 'rightlink10:diable', "Disables the RightLink 10 agent"
-recipe 'rightlink10:upgrade',"Upgrades the RightLink 10 agent" 
+recipe 'rightlink10::enable', "Enables the RightLink 10 agent"
+recipe 'rightlink10::diable', "Disables the RightLink 10 agent"
+recipe 'rightlink10::upgrade',"Upgrades the RightLink 10 agent" 
 
 attribute 'rightlink10/refresh_token',
   :display_name => 'RightScale Refresh Token',
