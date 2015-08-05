@@ -15,7 +15,7 @@ attribute 'rightlink10/refresh_token',
   :description => 'The API Refresh Token',
   :type => 'string',
   :required => 'required',
-  :recipes => ['rightlink10::enable', 'rightlink10::disable', 'rightlink10:upgrade']
+  :recipes => ['rightlink10::enable', 'rightlink10::disable', 'rightlink10::upgrade']
 
 attribute 'rightlink10/server_name',
   :display_name => 'RightScale Server Name',
