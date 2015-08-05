@@ -5,5 +5,5 @@ remote_file '/tmp/rightlink.disable.sh' do
 end
 
 execute 'disable rightlink' do
-  command "/tmp/rightlink.disable.sh -k  node['rightlink10']['refresh_token'] -f"
+  command "/tmp/rightlink.disable.sh -k  #{node[:rightlink10][:refresh_token]} -f"
 end
