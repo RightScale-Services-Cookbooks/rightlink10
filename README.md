@@ -18,16 +18,16 @@ e.g.
 #### rightlink10::default
 <table>
   <tr>
-    <th>Key</th>
-    <th>Type</th>
+    <th>Recipe</th>
     <th>Description</th>
-    <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['rightlink10']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['rightlink10']['enable']</tt></td>
+    <td>Enables RightLink 10</td>
+  </tr>
+  <tr>
+    <td><tt>['rightlink10']['disable']</tt></td>
+    <td>Disables RightLink 10</td>
   </tr>
 </table>
 
