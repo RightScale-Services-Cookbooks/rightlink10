@@ -8,7 +8,6 @@ describe 'rightlink10::disable' do
   end
 
     it 'disable rightlink' do
-       #resource = chef_run.execute('described_recipe')
        expect(chef_run).to run_execute('disable rightlink')
      end
 end
