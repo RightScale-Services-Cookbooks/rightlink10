@@ -1,6 +1,11 @@
-rightlink10 Cookbook
+# rightlink10
+
+[![Release](https://img.shields.io/github/release/RightScale-Services-Cookbooks/rightlink10.svg?style=flat)][release]
+[![Build Status](https://travis-ci.org/RightScale-Services-Cookbooks/rightlink10.svg?style=flat)][travis]
 ====================
-This cookbook provides 3 recipes for use with RightScale's RightLink 10 agent.
+Provides recipes to enable and disable RightScale's RightLink 10 agent .
+
+Github Repository: [https://github.com/RightScale-Services-Cookbooks/rightlink10](https://github.com/RightScale-Services-Cookbooks/rightlink10)
 
 Requirements
 ------------
@@ -33,11 +38,11 @@ e.g.
 
 Usage
 -----
-#### rightlink10::default
+#### rightlink10::enable
 TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `rightlink10` in your node's `run_list`:
+#### rightlink10::disable
+TODO: Write usage instructions for each cookbook.
 
 ```json
 {
@@ -47,6 +52,15 @@ Just include `rightlink10` in your node's `run_list`:
   ]
 }
 ```
+
+# Attributes
+
+- `node['rightlink10']['refresh_token']` - The RightScale refresh token
+- `node['rightlink10']['server_name']` - The name to associate with the server
+- `node['rightlink10']['servertemplate_href']` -  The servertemplate to associate with the server
+- `node['rightlink10']['cloud']` - The cloud provider of the server
+- `node['rightlink10']['deployment_name']` - The deployment name
+
 
 Contributing
 ------------
