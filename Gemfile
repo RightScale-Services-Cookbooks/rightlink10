@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf'
-#gem 'thor-foodcritic'
+gem 'thor-foodcritic'
 
 group :integration do
 # Prior to 0.1.6, libyaml is vulnerable to a heap overflow exploit from malicious YAML payloads.
@@ -16,4 +16,3 @@ group :integration do
   gem 'foodcritic', '~> 4.0.0'
   gem 'rspec-expectations', '~> 3.0.0'
 end
-
