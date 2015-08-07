@@ -1,7 +1,7 @@
 # rightlink10
 
-[![Release](https://img.shields.io/github/release/RightScale-Services-Cookbooks/rightlink10.svg?style=flat)][release]
 [![Build Status](https://travis-ci.org/RightScale-Services-Cookbooks/rightlink10.svg?style=flat)][travis]
+[travis]: https://travis-ci.org/RightScale-Services-Cookbooks/rightlink10
 ====================
 Provides recipes to enable and disable RightScale's RightLink 10 agent .
 
