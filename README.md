@@ -15,26 +15,8 @@ e.g.
 #### packages
 - `toaster` - rightlink10 needs toaster to brown your bagel.
 
-Attributes
-----------
-TODO: List your cookbook attributes here.
 
-e.g.
-#### rightlink10::default
-<table>
-  <tr>
-    <th>Recipe</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><tt>['rightlink10']['enable']</tt></td>
-    <td>Enables RightLink 10</td>
-  </tr>
-  <tr>
-    <td><tt>['rightlink10']['disable']</tt></td>
-    <td>Disables RightLink 10</td>
-  </tr>
-</table>
+
 
 Usage
 -----
@@ -52,6 +34,22 @@ TODO: Write usage instructions for each cookbook.
   ]
 }
 ```
+
+# Recipes
+<table>
+  <tr>
+    <th>Recipe</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><tt>['rightlink10']['enable']</tt></td>
+    <td>Enables RightLink 10</td>
+  </tr>
+  <tr>
+    <td><tt>['rightlink10']['disable']</tt></td>
+    <td>Disables RightLink 10</td>
+  </tr>
+</table>
 
 # Attributes
 
