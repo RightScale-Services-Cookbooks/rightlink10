@@ -15,10 +15,10 @@ Access to https://rightlink.rightscale.com from the server.
 Usage
 -----
 #### rightlink10::enable
-TODO: Write usage instructions for each cookbook.
+Add to your runlist to enable rightlink10
 
 #### rightlink10::disable
-TODO: Write usage instructions for each cookbook.
+Add to your runlist to disable rightlink10.
 
 
 
