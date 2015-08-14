@@ -58,4 +58,4 @@ Contributing
 
 License and Authors
 -------------------
-Authors: @gonzalez
+Authors: [@gonzalez](http://github.com/gonzalez)
