@@ -2,20 +2,19 @@ name             'rightlink10'
 maintainer       'RightScale'
 maintainer_email 'edwin@rightscale.com'
 license          'All rights reserved'
-description      'Enables/Disable/Upgrades rightlink10'
+description      'Enables/Disable RightScale's rightlink10 agent' 
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
 recipe 'rightlink10::enable', "Enables the RightLink 10 agent"
 recipe 'rightlink10::disable', "Disables the RightLink 10 agent"
-recipe 'rightlink10::upgrade',"Upgrades the RightLink 10 agent"
 
 attribute 'rightlink10/refresh_token',
   :display_name => 'RightScale Refresh Token',
   :description => 'The API Refresh Token',
   :type => 'string',
   :required => 'required',
-  :recipes => ['rightlink10::enable', 'rightlink10::disable', 'rightlink10::upgrade']
+  :recipes => ['rightlink10::enable', 'rightlink10::disable']
 
 attribute 'rightlink10/server_name',
   :display_name => 'RightScale Server Name',

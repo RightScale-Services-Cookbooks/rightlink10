@@ -9,15 +9,8 @@ Github Repository: [https://github.com/RightScale-Services-Cookbooks/rightlink10
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+Access to https://rightlink.rightscale.com from the server.
 
-e.g.
-#### packages
-- `toaster` - rightlink10 needs toaster to brown your bagel.
-
-Attributes
-----------
-TODO: List your cookbook attributes here.
 
 e.g.
 #### rightlink10::default
