@@ -12,8 +12,17 @@ Requirements
 Access to https://rightlink.rightscale.com from the server.
 
 
-e.g.
-#### rightlink10::default
+Usage
+-----
+#### rightlink10::enable
+TODO: Write usage instructions for each cookbook.
+
+#### rightlink10::disable
+TODO: Write usage instructions for each cookbook.
+
+
+
+# Recipes
 <table>
   <tr>
     <th>Recipe</th>
@@ -28,23 +37,6 @@ e.g.
     <td>Disables RightLink 10</td>
   </tr>
 </table>
-
-Usage
------
-#### rightlink10::enable
-TODO: Write usage instructions for each cookbook.
-
-#### rightlink10::disable
-TODO: Write usage instructions for each cookbook.
-
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[rightlink10]"
-  ]
-}
-```
 
 # Attributes
 
