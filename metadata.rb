@@ -2,7 +2,7 @@ name             'rightlink10'
 maintainer       'RightScale'
 maintainer_email 'edwin@rightscale.com'
 license          'All rights reserved'
-description      'Enables/Disable RightScale's rightlink10 agent' 
+description      "Enables/Disable RightScale's rightlink10 agent" 
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
