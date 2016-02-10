@@ -2,7 +2,7 @@ name             'rightlink10'
 maintainer       'RightScale'
 maintainer_email 'edwin@rightscale.com'
 license          'All rights reserved'
-description      "Enables/Disable RightScale's rightlink10 agent" 
+description      "Enables/Disable RightScale's rightlink10 agent"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
@@ -25,21 +25,21 @@ attribute 'rightlink10/server_name',
 
 attribute 'rightlink10/servertemplate_href',
   :display_name => 'RightScale ServerTemplate Href',
-  :description => "The servertemplate to associate with this server",
+  :description => 'The servertemplate to associate with this server',
   :type => 'string',
   :required => 'required',
   :recipes => ['rightlink10::enable']
 
 attribute 'rightlink10/cloud',
   :display_name => 'Cloud Provider',
-  :description => "The cloud provider",
+  :description => 'The cloud provider',
   :type => 'string',
   :required => 'required',
   :recipes => ['rightlink10::enable']
 
 attribute 'rightlink10/deployment_name',
   :display_name => 'Deployment Name',
-  :description => "The deployment name where the server will be placed ",
+  :description => 'The deployment name where the server will be placed ',
   :type => 'string',
   :required => 'required',
   :recipes => ['rightlink10::enable']

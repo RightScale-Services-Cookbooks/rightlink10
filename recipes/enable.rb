@@ -1,5 +1,5 @@
 remote_file "#{Chef::Config[:file_cache_path]}/rightlink.enable.sh" do
-  source 'https://rightlink.rightscale.com/rll/10.1.4/rightlink.enable.sh'
+  source 'https://rightlink.rightscale.com/rll/latest/10/rightlink.enable.sh'
   mode 0755
   action :create
 end
