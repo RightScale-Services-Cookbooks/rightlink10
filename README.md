@@ -45,6 +45,7 @@ Add to your runlist to disable rightlink10.
 - `node['rightlink10']['servertemplate_href']` -  The servertemplate to associate with the server
 - `node['rightlink10']['cloud']` - The cloud provider of the server
 - `node['rightlink10']['deployment_name']` - The deployment name
+- `node['rightlink10']['version']` - The rightlink version  e.g. 10.3.0
 
 
 Contributing
