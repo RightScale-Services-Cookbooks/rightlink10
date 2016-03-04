@@ -5,14 +5,14 @@ remote_file "#{Chef::Config[:file_cache_path]}/rightlink.enable.sh" do
 end
 
 ruby_block "RightLink Enable" do
-
-
-  if node['rightlink10']['server_name'] == 'nil'
-    notifies :run, 'execute[enable-rightlink]', :immediately
-  else
-    notifies :run, 'execute[enable-rightlinkr-with-server-name]', :immediately
+  block do
+    if node['rightlink10']['server_name'] == 'nil'
+      notifies :run, 'execute[enable-rightlink]', :immediately
+    else
+      notifies :run, 'execute[enable-rightlinkr-with-server-name]', :immediately
+    end
   end
-
+  action :run
 end
 
 execute 'enable-rightlink' do
