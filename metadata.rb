@@ -20,7 +20,7 @@ attribute 'rightlink10/server_name',
   :display_name => 'RightScale Server Name',
   :description => 'The name associated with this server.',
   :type => 'string',
-  :required => 'required',
+  :required => 'optional',
   :recipes => ['rightlink10::enable']
 
 attribute 'rightlink10/servertemplate_href',
@@ -36,6 +36,13 @@ attribute 'rightlink10/cloud',
   :type => 'string',
   :required => 'required',
   :recipes => ['rightlink10::enable']
+
+  attribute 'rightlink10/api_endpoint',
+    :display_name => 'RightScale API Endpoint',
+    :description => 'the hostname for the RightScale API (us-3.rightscale.com / us-4.rightscale.com)',
+    :type => 'string',
+    :required => 'required',
+    :recipes => ['rightlink10::enable']
 
   attribute 'rightlink10/version',
     :display_name => 'RightLink Version',
