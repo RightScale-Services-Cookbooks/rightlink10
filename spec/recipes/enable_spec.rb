@@ -7,7 +7,7 @@ describe 'rightlink10::enable' do
   end
 
     it 'enable rightlink' do
-       expect(chef_run).to run_execute('enable rightlink')
+       expect(chef_run).to run_execute('enable-rightlink')
      end
 
      it 'creates a remote_file rightscale.enable.sh' do
