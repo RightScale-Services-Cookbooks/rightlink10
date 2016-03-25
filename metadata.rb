@@ -4,17 +4,18 @@ maintainer_email 'edwin@rightscale.com'
 license          'All rights reserved'
 description      "Enables/Disable RightScale's rightlink10 agent"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.0'
+version          '1.0.1'
 
 recipe 'rightlink10::enable', "Enables the RightLink 10 agent"
 recipe 'rightlink10::disable', "Disables the RightLink 10 agent"
+recipe 'rightlink10::create_deployment', "Creates deployment if it doesn not exists"
 
 attribute 'rightlink10/refresh_token',
   :display_name => 'RightScale Refresh Token',
   :description => 'The API Refresh Token',
   :type => 'string',
   :required => 'required',
-  :recipes => ['rightlink10::enable', 'rightlink10::disable']
+  :recipes => ['rightlink10::enable', 'rightlink10::disable', 'rightlink10::create_deployment']
 
 attribute 'rightlink10/server_name',
   :display_name => 'RightScale Server Name',
@@ -42,7 +43,7 @@ attribute 'rightlink10/cloud',
     :description => 'the hostname for the RightScale API (us-3.rightscale.com / us-4.rightscale.com)',
     :type => 'string',
     :required => 'required',
-    :recipes => ['rightlink10::enable']
+    :recipes => ['rightlink10::enable', 'rightlink10::create_deployment']
 
   attribute 'rightlink10/version',
     :display_name => 'RightLink Version',
@@ -56,4 +57,4 @@ attribute 'rightlink10/deployment_name',
   :description => 'The deployment name where the server will be placed ',
   :type => 'string',
   :required => 'required',
-  :recipes => ['rightlink10::enable', 'rightlink10::disable']
+  :recipes => ['rightlink10::enable', 'rightlink10::create_deployment']
